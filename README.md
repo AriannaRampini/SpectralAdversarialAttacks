@@ -13,4 +13,4 @@ This repository is the PyTorch implementation of the paper:
 
 ## Data
 
-The shapes used in this example (in ```dataset```) are from the [SMAL dataset](https://smal.is.tue.mpg.de/).
+The shapes used in this example (in ```datasets```) are from the [SMAL dataset](https://smal.is.tue.mpg.de/).
