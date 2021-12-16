@@ -6,6 +6,8 @@ import tqdm
 import torch
 import torch_geometric.data
 import torch_geometric.transforms as transforms
+import openmesh
+import torch_geometric.io as gio
 
 import dataset.downscale as dscale
 from utils.transforms import Move, Rotate, ToDevice
@@ -79,7 +81,7 @@ class SmalDataset(torch_geometric.data.InMemoryDataset):
         data_list = []
         f2e = transforms.FaceToEdge(remove_faces=False)
         for pindex, path in enumerate(tqdm.tqdm(self.raw_paths)):
-            mesh = torch_geometric.io.read_ply(path)
+            mesh = gio.read_ply(path)
             f2e(mesh)
             tmp = split(path)[1].split(".")[0].split("_")
             model_str, pose_str = tmp[-2], tmp[-1]
