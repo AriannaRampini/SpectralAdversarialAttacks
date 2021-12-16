@@ -10,7 +10,7 @@ This repository is the PyTorch implementation of the paper:
   <img src="./teaser.PNG" width="500">
 </p>
 
-To visualize and/or replicate the paper adversarial samples, please take a look at the included Colab Notebook.
+To visualize and/or replicate the paper adversarial samples, please take a look at the included Colab Notebook ```run_adversarial_attack.ipynb```.
 
 ## Data
 
